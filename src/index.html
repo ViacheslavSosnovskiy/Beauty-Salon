@@ -13,22 +13,60 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navigation">
-        <a class="header__link" href="#">Партнеры</a>
-        <a class="header__link" href="#">Услуги</a>
-        <a class="header__link" href="#">Мастера</a>
-        <a class="header__link" href="#">Отзывы</a>
-        <a class="header__link" href="#">Контакты</a>
-      </nav>
-    </header>
+    <!-- header -->
+    <div class="container">
+      <header class="header">
+        <div class="wrapper__logo">
+          <a class="logo" href="index.html">
+            <svg class="logo__svg" width="40" height="40">
+              <use href="./img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <!-- navigation -->
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Партнеры</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Мастера</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="wrapper__burger-btn">
+          <button class="burger-btn">
+            <svg class="burger-btn__svg" width="16" height="16">
+              <use href="./img/sprite.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+    </div>
+    <!-- main -->
     <main>
+      <!-- hero -->
       <section class="hero">
-        <h1>Парикмахерская</h1>
-        <p>Создадим образ, который идеально подчеркнет ваш характер.</p>
-        <img class="hero__main-img" src="./img/hero/main-img.png" />
-        <!-- <img src="./img/hero/left-img.png" />
-        <img src="./img/hero/right-img.png" /> -->
+        <div class="container">
+          <img class="hero__left-img" src="./img/hero/left-img.png" />
+          <div class="hero__wrapper">
+            <h1>Парикмахерская</h1>
+            <p>Создадим образ, который идеально подчеркнет ваш характер.</p>
+          </div>
+          <img class="hero__right-img" src="./img/hero/right-img.png" />
+          <img class="hero__main-img" src="./img/hero/main-img.png" />
+        </div>
       </section>
     </main>
 

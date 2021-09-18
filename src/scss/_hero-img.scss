@@ -1,4 +1,30 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to bottom, rgba(224, 69, 4, 0.6) 0%, rgba(224, 69, 4, 0) 100%);
+}
+
 .hero__main-img {
-  width: 300px;
-  height: 300px;
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+.hero__left-img {
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    width: 130px;
+    height: 150px;
+  }
+}
+
+.hero__right-img {
+  width: 218px;
+  height: 328px;
 }
