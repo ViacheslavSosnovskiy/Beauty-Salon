@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌸 Beauty-Salon 🌸</title>
+    <title>Beauty-Salon</title>
     <!-- иконка -->
     <link rel="icon" type="image/png" href="./img/salon.png" />
     <!-- нормалайз -->
@@ -11,9 +11,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
     <!-- стили -->
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <!-- header -->
     <div class="container">
@@ -61,13 +69,17 @@
       <!-- hero -->
       <section class="hero">
         <div class="container">
-          <img class="hero__left-img" src="./img/hero/left-img.png" />
-          <div class="hero__wrapper">
-            <h1>Парикмахерская</h1>
-            <p>Создадим образ, который идеально подчеркнет ваш характер.</p>
+          <div class="flex-container">
+            <div class="hero__wrapper">
+              <h1 class="hero__title">Парикмахерская</h1>
+              <p>Создадим образ, который идеально подчеркнет ваш характер.</p>
+            </div>
+            <div class="hero__wrapper-img">
+              <img class="hero__left-img" src="./img/hero/left-img.png" />
+              <img class="hero__right-img" src="./img/hero/right-img.png" />
+              <img class="hero__main-img" src="./img/hero/main-img.png" />
+            </div>
           </div>
-          <img class="hero__right-img" src="./img/hero/right-img.png" />
-          <img class="hero__main-img" src="./img/hero/main-img.png" />
         </div>
       </section>
     </main>
