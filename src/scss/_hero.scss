@@ -11,7 +11,15 @@
 .flex-container {
   display: flex;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
+
+  // @media screen and (min-width: 768px) {
+  //   background-repeat: no-repeat;
+  //   background-size: 30%;
+  //   background-position-y: 180px;
+  //   background-position-x: left;
+  //   background-image: url('./img/hero/left-img.png');
+  // }
 }
 
 .hero__title {
