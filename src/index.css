@@ -115,7 +115,9 @@ button {
 }
 
 .hero__title {
-  font-family: Oranienbaum;
+  margin-top: 84px;
+  margin-bottom: 84px;
+  font-family: "Oranienbaum";
   font-weight: 500;
 }
 
@@ -131,6 +133,18 @@ button {
   .hero__title {
     font-size: 100px;
     line-height: 145px;
+  }
+}
+
+.hero__text {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__text {
+    display: none;
   }
 }
 
