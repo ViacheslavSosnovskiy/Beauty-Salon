@@ -18,19 +18,27 @@
   }
 }
 
+// ============== LIST =============== //
 .cards__list {
   display: flex;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-
     justify-content: space-evenly;
 
     margin-left: -12px;
     margin-top: -12px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -14px;
+    margin-top: -14px;
+  }
 }
 
+// =============  ITEM =============== //
 .cards__item {
   text-align: center;
   border-radius: 10px;
@@ -50,11 +58,20 @@
     margin-top: 12px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding: 20px;
+    width: 180px;
+    height: 170px;
+    background-color: $accent-color;
+
+    margin-left: 14px;
+    margin-top: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding: 30px;
-    width: 225px;
-    height: 190px;
-    border-radius: 10px;
+    width: 200px;
+    height: 200px;
     background-color: $accent-color;
 
     &:not(:last-child) {
@@ -62,7 +79,7 @@
     }
   }
 }
-
+// ======================================= //
 .cards__logo {
   fill: $accent-color;
 
