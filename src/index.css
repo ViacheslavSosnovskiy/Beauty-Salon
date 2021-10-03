@@ -41,6 +41,14 @@ button {
   padding-bottom: 15px;
 }
 
+.logo:hover, .logo:focus {
+  fill: #e04504;
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .header__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +66,13 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.header__item:hover, .header__item:focus {
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 @media screen and (min-width: 767px) {
@@ -83,20 +98,10 @@ button {
   }
 }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .hero {
+    padding-top: 84px;
+    padding-bottom: 84px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(224, 69, 4, 0.6)), to(rgba(224, 69, 4, 0)));
     background: linear-gradient(to bottom, rgba(224, 69, 4, 0.6) 0%, rgba(224, 69, 4, 0) 100%);
   }
@@ -115,8 +120,6 @@ button {
 }
 
 .hero__title {
-  margin-top: 84px;
-  margin-bottom: 84px;
   font-family: "Oranienbaum";
   font-weight: 500;
 }
@@ -124,22 +127,27 @@ button {
 @media screen and (max-width: 767px) {
   .hero__title {
     font-size: 42px;
-    line-height: 61px;
+    line-height: 1.4;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__title {
+    font-size: 60px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
     font-size: 100px;
-    line-height: 145px;
+    line-height: 1.4;
   }
 }
 
 .hero__text {
-  font-weight: normal;
   font-size: 22px;
-  line-height: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -148,14 +156,23 @@ button {
   }
 }
 
-.hero__main-img {
-  width: 550px;
-  height: 550px;
-}
-
 @media screen and (max-width: 767px) {
   .hero__main-img {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__main-img {
+    width: 330px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__main-img {
+    width: 480px;
+    height: 520px;
   }
 }
 
@@ -204,6 +221,112 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+.section-cards {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .cards__title {
+    text-align: center;
+    font-family: "Oranienbaum";
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards__title {
+    display: none;
+  }
+}
+
+.cards__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .cards__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+}
+
+.cards__item {
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.cards__item:hover, .cards__item:focus {
+  -webkit-transition: linear 300ms;
+  transition: linear 300ms;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+@media screen and (max-width: 767px) {
+  .cards__item {
+    padding: 20px;
+    border: 2px solid #e04504;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards__item {
+    padding: 30px;
+    width: 225px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #e04504;
+  }
+  .cards__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.cards__logo {
+  fill: #e04504;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__logo {
+    fill: #f2f3f4;
+  }
+}
+
+.cards__wrapper {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.cards__text {
+  font-family: "Oranienbaum";
+  font-size: 14px;
+  line-height: 1.14;
+  color: "Oranienbaum";
+}
+
+@media screen and (min-width: 768px) {
+  .cards__text {
+    font-size: 18px;
+    line-height: 1.16;
+    color: #f2f3f4;
   }
 }
 /*# sourceMappingURL=index.css.map */

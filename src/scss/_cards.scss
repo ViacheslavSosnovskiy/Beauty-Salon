@@ -1,0 +1,90 @@
+.section-cards {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.cards__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.cards__list {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+}
+
+.cards__item {
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+
+  &:hover,
+  &:focus {
+    transition: linear 300ms;
+    transform: scale(1.06);
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+    border: 2px solid $accent-color;
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px;
+    width: 225px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: $accent-color;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.cards__logo {
+  fill: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    fill: $second-color;
+  }
+}
+
+.cards__wrapper {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.cards__text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $main-font;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.16;
+    color: $second-color;
+  }
+}
